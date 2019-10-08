@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    body{font-family:Arial; background-color: #18A383; box-sizing:border-box;}
+    
+    form{
+      background-color: white;
+     border-radius: 3px;
+     font-size: 16px;
+     color:#999;
+     padding: 20px;
+     margin: 0 auto;
+     width:500px;
+    }
+    input, textarea{
+        border:0;
+        outline: none;
+        width: 280px;
+    }
+    .field{
+     border: solid 1px  #ccc; 
+     padding:10px;
+   
+ 
+    }
+    .field:focus{
+        border-top-color: black;
+    }  
+    
+  </style>
+
+</head>
+
+    
+    <center>
+            <h1 >Formulario de Reserva</h1>
+        
+                   <p>Reservar con nosotros es simple y fácil. Sólo complete el formulario de reserva aquí debajo y le enviaremos un email con el itinerario y los detalles de pago. Por favor, no olvide que debe efectuar el pago de su reserva dentro de las 24 horas de realizada la misma.</p> 
+                  
+    </center>
+    
+    <form action="">
+        <p>Nombre:</p>
+        <input type="text" class="field"> <br/>
+        <p>Apellidos:</p>
+        <input type="text" class="field"> <br/>
+    
+        <p>Correo electrónico:</p>
+        <input type="text" class="field"> <br/>
+    
+        <p>Asunto:</p>
+        <input type="text" class="field"> <br/>
+    
+        <p>Mensaje:</p>
+        <textarea class="field"></textarea> <br/>
+        <label for="start">inicio dias de estadia:</label>
+
+<input type="date" id="start" name="Dias de estadia"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">
+      
+       <label for="start">Fin de dias de estadia:</label>
+
+<input type="date" id="start" name="Dias de estadia"
+      value="2018-07-22"
+      min="2018-01-01" max="2018-12-31">
+      <label for="start">Numero de huespedes/pasajeros*:</label>
+      <select> 
+       <option value="*Please Select*" data-index="0">*Seleccionar*</option>
+       <option value="1" data-index="1">1</option>
+       <option value="1" data-index="1">2</option>
+       <option value="1" data-index="1">3</option>
+       <option value="1" data-index="1">4</option>
+       <option value="1" data-index="1">5</option>
+       <option value="1" data-index="1">6</option>
+       <option value="1" data-index="1">7</option>
+       <option value="1" data-index="1">8</option>
+       <option value="1" data-index="1">9</option>
+       <option value="1" data-index="1">10</option>
+      </select>
+      <div data-role="dropdown-skin">*Seleccionar*</div>
+      <label data-role="label" id="radio-0000001a-acc" data-i18n-text="control_label_8961021">Tipo de habitación/ticket</label>
+      <dt data-role="instructions" id="radio-0000001a-instr-acc" data-is-empty="1" data-i18n-text="control_instructions_8961021"></dt>
+    
+      <span data-role="option-text" data-i18n-html="control_label_8961021_choice_0" data-skip-markdown="true">Económica</span>
+      <div data-role="choice" data-size="half"><label data-role="choice" id="radio-0000001a1"><input type="radio" id="0000001a_1" name="c_0000001a" value="Premium" data-index="1" data-role="i123-input"><label data-role="radio" for="0000001a_1" aria-labelledby="radio-0000001a1" role="radio"></label><span data-role="option-text" data-i18n-html="control_label_8961021_choice_1" data-skip-markdown="true">Premium</span></label></div>
+      <div data-role="input-row" data-is-last-row="1" data-fill-colspan="0"><div data-role="choice" data-size="half"><label data-role="choice" id="radio-0000001a2"><input type="radio" id="0000001a_2" name="c_0000001a" value="Business" data-index="2" data-role="i123-input"><label data-role="radio" for="0000001a_2" aria-labelledby="radio-0000001a2" role="radio" aria-checked="true"></label><span data-role="option-text" data-i18n-html="control_label_8961021_choice_2" data-skip-markdown="true">Business</span></label></div><div data-role="choice" data-size="half"><label data-role="choice" id="radio-0000001a3"><input type="radio" id="0000001a_3" name="c_0000001a" value="Deluxe" data-index="3" data-role="i123-input"><label data-role="radio" for="0000001a_3" aria-labelledby="radio-0000001a3" role="radio" aria-checked="true"></label><span data-role="option-text" data-i18n-html="control_label_8961021_choice_3" data-skip-markdown="true">Deluxe</span></label></div></div>
+      <label data-role="error" id="radio-0000001a-error-acc" data-is-empty="1"></label>
+    </div>
+
+
+      <input type="button" class="btn-green" value="Enviar Datos">
+    </form>
+</body>
+</html>
