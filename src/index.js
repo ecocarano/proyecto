@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-//app.set('port',process.env.PORT || 5000);
+app.set('port',process.env.PORT || 5000);
 
 //middlewares
 app.use(express.json());
@@ -20,6 +20,9 @@ app.use(require ('./routes/customer'));
 
 app.use(express.static(path.join(__dirname,'public')));
 
-app.listen(app.get('port'),()=>{
-    console.log('servidor ', app.get('port'));
-})
+//app.listen(app.get('port'),()=>{
+//    console.log('servidor ', app.get('port'));
+//})
+
+app.listen(app.get('port'));
+console.log('servidor iniciado en puerto', app.get('port'));
